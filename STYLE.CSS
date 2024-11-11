@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: orange;
+    background-color:red;
 }
 
 h1, h2, h3 {
@@ -11,21 +11,15 @@ h1, h2, h3 {
 	text-align:center;
 }
 
-a {
-    text-decoration: none;
-    color: #4CAF50;
-}
 
-
-}
 
 /* Header Styling */
 header {
     display: flex;
     justify-content: space-between;
     align-items:right-side;
-    padding: 20px;
-    background-color: #333;
+    padding: 50px;
+    background-color: #B565A7
     color: white;
 }
 
@@ -33,12 +27,6 @@ header {
     display: flex;
     align-items: center;
 }
-
-.profile-pic {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-right: 20px;
 }
 
 nav ul {
@@ -47,7 +35,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 80px;
 }
 
 .nav ul li a {
@@ -58,12 +46,7 @@ nav ul li {
     transition: background-color 0.3s;
 	text-align:left;
 	}
-	.nav ul li
 
-nav ul li a:hover {
-    background-color: #45a049;
-    border-radius: 5px;
-}
 
 /* Main Content */
 main {
@@ -89,18 +72,43 @@ h2 {
     margin-bottom: 30px;
 }
 
-.school-list p, .experience-item p {
+ .experience-item p {
     font-size: 16px; text-align:center;
 }
+.section-box {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
 
-/* Hobbies Section */
+.section-box {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.school-list {
+    display: flex;
+    gap: 10px;
+}
+
+.school-box {
+	width:100px;
+    padding:30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #009B77;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    text-align: center;
+}
+
+
 #hobbies .hobby-item {
     margin-bottom: 20px;
 }
 
 .hobi-video {
-    width: 100%;
-    max-width: 500px;
+    width: 300%;
+    max-width: 1000px;
     height: 300px;
     margin: 10px 0;
 	text-align:center;
@@ -108,14 +116,15 @@ h2 {
 
 .hobb-video {
     width: 100%;
-    max-width: 500px;
+    max-width: 1000px;
     height: 300px;
     margin: 10px 0;
+	background-color:light-yellow;
 }
 
 .hobo-video {
     width: 100%;
-    max-width: 500px;
+    max-width: 1000px;
     height: auto;
     margin: 10px 0;
 }
@@ -195,8 +204,8 @@ header {
 
 /* Styling for the profile picture */
 .header-left img.profile-pic {
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin-right: 15px;
 }
@@ -225,22 +234,51 @@ header {
 }
 
 .nav-right ul li a:hover {
-    text-decoration: underline;
+    text-decoration:none;
 }
-a:link {
-  color: blue;
-}
-
-/
-a:visited {
-  color: purple; 
+/* Style for the nav container */
+.nav-right {
+    text-align: right;
+    margin-right: 20px;
 }
 
-a:hover {
-  color: green
+/* Style for the unordered list */
+.nav-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-a:active {
-  color: red; 
+/* Style for each list item */
+.nav-right li {
+    margin-left: 20px;
 }
+
+
+.nav-right a {
+    text-decoration: none;
+    color: #333;  
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.nav-right a:hover {
+    color: white;  
+    transform: scale(1.1);
+    background-color: #f0f0f0;  
+}
+
+/* Visited link effect */
+.nav-right a:visited {
+    color:blue;
+}
+
+
+.nav-right a:active {
+    color: red;
+    transform: scale(0.95);
+}
+
 
