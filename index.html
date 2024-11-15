@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="style.css">
     <title>My Website</title>
 </head>
 <body>
@@ -12,13 +12,14 @@
     <header>
         <div class="header-left">
             <img src="WEB.jpg" alt="Alexander" class="profile-pic">
-            <h1>MUGARURA ALEXANDER - A T STUDENT OF MUK </h1>
+          <marquee><h1>MUGARURA ALEXANDER - A T STUDENT OF MUK</h1></marquee>
         </div>
         <nav class="nav-right">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#education">Education</a></li>
-                <li><a href="#career">Career</a></li>
+                <li><a href="#work-experience">Work Experience</a></li>
+                <li><a href="#career-prospects">Career Prospects</a></li>
                 <li><a href="#hobbies">Hobbies</a></li>
             </ul>
         </nav>
@@ -26,20 +27,21 @@
 
     <!-- Main Section -->
     <main>
-<!-- Education Section -->
-<section id="education" class="section-box">
-    <h2>Schools Attended</h2>
-    <div class="school-list">
-        <div class="school-box">2010-2014: MUGYERA PRIMARY SCHOOL</div>
-        <div class="school-box">2014-2018: BUDDU SS</div>
-        <div class="school-box">2018-2019: Kawempe Muslim School</div>
-        <div class="school-box">2019-2020: KITENDE SS</div>
-        <div class="school-box">2021-2024: Makerere University</div>
-    </div>
-</section>
 
-		<!-- work pros -->
-        <section id="career" class="section-box">
+        <!-- Education Section -->
+        <section id="education" class="section-box">
+            <h2>Schools Attended</h2>
+            <div class="school-list">
+                <div class="school-box">2010-2014: MUGYERA PRIMARY SCHOOL</div>
+                <div class="school-box">2014-2018: BUDDU SS</div>
+                <div class="school-box">2018-2019: Kawempe Muslim School</div>
+                <div class="school-box">2019-2020: KITENDE SS</div>
+                <div class="school-box">2021-2024: Makerere University</div>
+            </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="work-experience" class="section-box">
             <h2>Work Experience</h2>
             <div class="experience-item">
                 <h3>Intern at Makerere University Main Library</h3>
@@ -49,29 +51,50 @@
                 <h3>Research Consultant at MUK</h3>
                 <p>Experienced in data cleaning software.</p>
             </div>
-        
+        </section>
+
+        <!-- Career Prospects Section -->
+        <section id="career-prospects" class="section-box">
+            <h2>Career Prospects</h2>
+            <div class="career-item">
+                <h3>Library Assistant</h3>
+                <p>Skilled in cataloging and classification of books and digital resources, making it easier for patrons to locate materials.</p>
+            </div>
+            <div class="career-item">
+                <h3>Data Analyst</h3>
+                <p>Proficient in data analysis tools, helping organizations to make data-driven decisions based on accurate and clean data.</p>
+            </div>
+            <div class="career-item">
+                <h3>Information Scientist</h3>
+                <p>Capable of managing digital archives, organizing large datasets, and ensuring the accessibility of information for various users.</p>
+            </div>
+            <div class="career-item">
+                <h3>Research Specialist</h3>
+                <p>Experienced in conducting in-depth research, data collection, and analysis to support academic and industry projects.</p>
+            </div>
+        </section>
 
         <!-- Hobbies Section -->
         <section id="hobbies" class="section-box">
             <h2>Hobbies</h2>
-            <div class="hobby-item">
-                <p>Reading the books</p>
-                <video class="hobi-video" src="HEE.mp4" controls muted loop></video>
+            <div class="hobii-item">
+                <p>Reading books</p>
+                <video src="HEE.mp4" controls muted loop></video>
             </div>
             <div class="hob-item">
                 <p>Kikiga dancing</p>
-                <video class="hobb-video" src="halo.mp4" controls muted loop></video>
+                <video src="halo.mp4" controls muted loop></video>
             </div>
-            <div class="hobby-item">
+            <div class="hobb-item">
                 <p>Preaching the word of God</p>
-                <video class="hobo-video" src="NONE.mp4" controls muted loop></video>
+                <video src="NONE.mp4" controls muted loop></video>
             </div>
         </section>
 
         <!-- Comment Section -->
-        <section class="comment-section">
+        <section class="comment-section section-box">
             <h2>Leave a Comment</h2>
-            <form class="comment-form">
+            <form>
                 <input type="text" placeholder="Your Name" required>
                 <textarea placeholder="Your Comment" rows="4" required></textarea>
                 <button type="submit">Submit Comment</button>
@@ -79,7 +102,7 @@
         </section>
 
         <!-- Contact Section -->
-        <section class="contact-section">
+        <section class="contact-section section-box">
             <h2>Contact Me</h2>
             <p>Feel free to reach out to me via WhatsApp or email.</p>
             <a href="https://wa.me/256706428396" target="_blank">WhatsApp: 0706428396</a><br>
