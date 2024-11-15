@@ -1,221 +1,33 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
+    background-color:pink;
+    color: #333;
     margin: 0;
-    padding: 0;
-    background-color:red;
+	padding: 0;
 }
 
 h1, h2, h3 {
     color: #333;
-	text-align:center;
 }
 
 
-
-/* Header Styling */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items:right-side;
-    padding: 50px;
-    background-color: #B565A7
-    color: white;
-}
-
-.header-left {
-    display: flex;
-    align-items: center;
-}
-}
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-}
-
-nav ul li {
-    margin: 80px;
-}
-
-.nav ul li a {
-    color: white;
-    padding: 30px;
-    text-transform:lowercase;
-    font-weight: bold;
-    transition: background-color 0.3s;
-	text-align:left;
-	}
-
-
-/* Main Content */
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
-}
-
-/* Styling for sections with borders */
-.section-box {
-    padding: 20px;
-    border: 2px solid black;
-    border-radius: 8px;
-    background-color: white;
-    margin-bottom: 30px;
-}
-
- .experience-item p {
-    font-size: 16px; text-align:center;
-}
-.section-box {
-    padding: 20px;
-    background-color: #f9f9f9;
-}
-
-.section-box {
-    padding: 20px;
-    background-color: #f9f9f9;
-}
-
-.school-list {
-    display: flex;
-    gap: 10px;
-}
-
-.school-box {
-	width:100px;
-    padding:30px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #009B77;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    min-width: 150px;
-    text-align: center;
-}
-
-
-#hobbies .hobby-item {
-    margin-bottom: 20px;
-}
-
-.hobi-video {
-    width: 300%;
-    max-width: 1000px;
-    height: 300px;
-    margin: 10px 0;
-	text-align:center;
-}
-
-.hobb-video {
-    width: 100%;
-    max-width: 1000px;
-    height: 300px;
-    margin: 10px 0;
-	background-color:light-yellow;
-}
-
-.hobo-video {
-    width: 100%;
-    max-width: 1000px;
-    height: auto;
-    margin: 10px 0;
-}
-/* Comment Section */
-.comment-section {
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 8px;
-}
-
-.comment-section h2 {
-    text-align: center;
-}
-
-.comment-form input, .comment-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-.comment-form button {
-    padding: 10px 15px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.comment-form button:hover {
-    background-color: #45a049;
-}
-
-/* Contact Section */
-.contact-section {
-    text-align: center;
-    padding: 20px;
-    background-color: #f4f4f4;
-}
-
-.contact-section a {
-    text-decoration: none;
-    color: #4CAF50;
-    font-size: 16px;
-    margin: 10px;
-}
-
-.contact-section a:hover {
-    color: #45a049;
-}
-
-/* Footer Section */
-footer {
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 10px;
-}
-/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #FF6F61;
+    color: #fff;
     padding: 20px;
 }
 
-/* Styling for the header-left section */
-.header-left {
-    display: flex;
-    align-items: center;
-}
-
-/* Styling for the profile picture */
-.header-left img.profile-pic {
-    width: 150px;
-    height: 150px;
+.header-left img {
     border-radius: 50%;
-    margin-right: 15px;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
 }
 
-/* Aligns nav-right section to the right of the header */
-.nav-right {
-    margin-left: auto;
-}
-
-/* Navigation styling */
 .nav-right ul {
     list-style-type: none;
     margin: 0;
@@ -225,60 +37,235 @@ header {
 
 .nav-right ul li {
     margin-left: 20px;
+    position: relative; /* Position for the pseudo-element */
 }
 
 .nav-right ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
 }
 
 .nav-right ul li a:hover {
-    text-decoration:none;
-}
-/* Style for the nav container */
-.nav-right {
-    text-align: right;
-    margin-right: 20px;
+    text-decoration: underline;
 }
 
-/* Style for the unordered list */
-.nav-right ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+/* Add bar between links */
+.nav-right ul li:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: -10px;
+    top: 0;
+    font-size: 20px;
+    color: #fff;
+    padding-left: 10px;
+}
+
+/* Section Box */
+.section-box {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Education Section */
+.school-list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-/* Style for each list item */
-.nav-right li {
-    margin-left: 20px;
-}
-
-
-.nav-right a {
-    text-decoration: none;
-    color: #333;  
-    font-size: 16px;
-    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
-}
-
-
-.nav-right a:hover {
-    color: white;  
-    transform: scale(1.1);
-    background-color: #f0f0f0;  
-}
-
-/* Visited link effect */
-.nav-right a:visited {
-    color:blue;
+.school-box {
+    background-color: #FF6F61; /* Coral */
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
 }
 
 
-.nav-right a:active {
-    color: red;
-    transform: scale(0.95);
+.experience-item {
+    background-color: #FF6F61;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.career-item {
+    background-color: #FF6F61; 
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.hobby-item {
+    background:green;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    flex: 1 1 30%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.hobby-item p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.hobby-item video {
+    width: 100px;
+    height: auto;
+    max-width: 500px;
+    border-radius: 8px;
 }
 
 
+@media (max-width: 768px) {
+    .hobbies {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hobby-item {
+        flex: 1 1 80%;
+        max-width: none;
+    }
+
+    .hobby-item video {
+        width: 90%;
+		background-color:GREEN;
+    }
+}
+
+/* Comment Section */
+.comment-section form {
+    display: flex;
+   
+}
+.hobb-item{width:200px;}
+/* Hobbies Section */
+.hobby-item {
+    background: #FF6F61; /* Coral */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    flex: 1 1 30%;
+    max-width: 500px;
+    text-align: center;
+    margin-bottom: 20px; /* Space between hobby items */
+    margin-right: 20px; /* Space between hobby items horizontally */
+}
+
+-bottom: 20px; /* Space between hobby items vertically */
+    }
+
+    /* Hobbies Section */
+#hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.hobby-item {
+    background: #FF6F61; /* Coral */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    flex: 1 1 30%;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.hobby-item p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.hobby-item video {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+}
+
+
+@media (min-width: 768px) {
+    .hobby-item {
+        flex: 1 1 30%; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    #hobbies {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hobb-item {
+        flex: 1 1 80%; 
+        margin-right: 0;
+        margin-bottom: 20px;
+		height:100;;
+    }
+
+    .hobby-item video {
+        width: 100%; 
+    }
+}
+
+/* Comment Section */
+.comment-section {
+    background:GREEN;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.comment-section h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.comment-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-section input, .comment-section textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.comment-section button {
+    padding: 10px;
+    background-color:aqua;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-section button:hover {
+    background-color: orange; 
+}
+.a:link{color:white; 
+.a:visited{color:orange; 
+.a:hover{color:green; 
+.a:active{color:red;
+ }
